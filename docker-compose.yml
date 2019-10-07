@@ -1,0 +1,26 @@
+version: "3"
+services:
+  zc-gateway:
+    build:
+      context: "./"
+      dockerfile: "./zc-gateway/Dockerfile"
+    ports:
+      - "4999:4999"
+  zc-client-1:
+    build:
+      context: "./"
+      dockerfile: "./zc-client/Dockerfile"
+    ports:
+      - "5001:5001"
+    environment:
+      - ZC_NAME=zc-client-1
+      - ZC_PORT=5001
+  zc-client-2:
+    build:
+      context: "./"
+      dockerfile: "./zc-client/Dockerfile"
+    ports:
+      - "5002:5002"
+    environment:
+      - ZC_NAME=zc-client-2
+      - ZC_PORT=5002
