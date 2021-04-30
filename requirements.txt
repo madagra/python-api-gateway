@@ -1,13 +1,14 @@
-certifi==2019.9.11
+-i https://pypi.org/simple/
+certifi==2020.12.5
 chardet==3.0.4
-Click==7.0
-Flask==1.1.1
+click==7.1.2
+flask==1.1.1
 idna==2.8
-ifaddr==0.1.6
+ifaddr==0.1.7
 itsdangerous==1.1.0
-Jinja2==2.10.3
-MarkupSafe==1.1.1
+jinja2==2.11.3
+markupsafe==1.1.1
 requests==2.22.0
-urllib3==1.25.6
-Werkzeug==0.16.0
+urllib3==1.25.8
+werkzeug==1.0.1
 zeroconf==0.23.0
